@@ -35,11 +35,10 @@ const RecomendacionesComponent = () => {
         {
             librosRecomendados.map((libro, idx) => (
                 <div key={idx}>
-                    <p>ISBN: {libro.ISBN}</p>
+                    <p>ISBN: {libro.ISBN} {idx}</p>
                     <p>Autor: {libro.author}</p>
                     <p>Título: {libro.title}</p>
                     <p>Descripción: {libro.description}</p>
-                    <hr />
                 </div>
             ))
         }

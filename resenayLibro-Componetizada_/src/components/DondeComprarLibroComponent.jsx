@@ -21,7 +21,7 @@ const DondeComprarLibroComponent = () => {
                 <div key={idx}>
                     <p>Nombre tienda: {tienda.name}</p>
                     <p>Dirección tienda: {tienda.address}</p>
-                    <hr />
+                    
                 </div>
             ))
         }
