@@ -10,7 +10,6 @@ function App() {
 
   return (
     <>
-    <script src="http://localhost:8097"></script>
     <div>
       <h2>Multiplicador</h2>
       <div>
