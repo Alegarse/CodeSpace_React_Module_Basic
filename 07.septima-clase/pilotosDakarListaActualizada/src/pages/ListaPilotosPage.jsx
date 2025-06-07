@@ -11,6 +11,7 @@ const ListaPilotosPage = () => {
   const [pilotoSelected, setPilotoSelected] = useState(undefined);
 
   const loadPilotos = () => {
+    console.log("Aqui llego");
     const aux = getPilotos();
     setListaPilotos(aux);
   };
@@ -42,7 +43,7 @@ const ListaPilotosPage = () => {
             <InfoPilotoComponent
               piloto={pilotoSelected}
               backToList={backToList}
-              showInList
+              showInfo
             />
           ) : (
             <>
