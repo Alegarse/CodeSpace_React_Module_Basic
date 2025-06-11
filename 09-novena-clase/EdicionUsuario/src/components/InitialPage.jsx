@@ -6,8 +6,21 @@ const InitialPage = () => {
   const [mode, setMode] = useState("CREATE"); // ' MODIFY', 'CREATE', 'VISUALICE'
 
   const createUser = (newUserData) => {
-    setUserData(newUserData);
-    setMode("VISUALICE");
+    if (Object.entries(newUserData).length < 3) {
+      showError("Faltan campos requeridos");
+    } else {
+      setUserData(newUserData);
+      setMode("VISUALICE");
+    }
+  };
+
+  const showError = (message) => {
+    const error = document.querySelector(".error-message");
+    error.style.visibility = "visible";
+    error.textContent = message;
+    setTimeout(() => {
+      error.style.visibility = "hidden";
+    }, 2000);
   };
 
   const modifyUser = (newUserData) => {
@@ -20,9 +33,9 @@ const InitialPage = () => {
   };
 
   const resetPage = () => {
-    setUserData({})
+    setUserData({});
     setMode("CREATE");
-  }
+  };
 
   const backtoVisualiceMode = () => {
     if (!userData) {

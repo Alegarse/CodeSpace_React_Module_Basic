@@ -22,6 +22,7 @@ const DataUserComponent = ({
 
   return (
     <>
+    <h2>Registro y edición de usuario por componentes</h2>
       <div className="container-data">
         <div className="input-container">
           <InputComponent
@@ -53,6 +54,7 @@ const DataUserComponent = ({
             newUserHandler={newUserHandler}
           />
         </div>
+        <div className="error-message">\u200B</div>
         <div className="btns-container">
           {mode === "CREATE" ? (
             <button className="btn-create" onClick={() => createUser(newUser)}>
