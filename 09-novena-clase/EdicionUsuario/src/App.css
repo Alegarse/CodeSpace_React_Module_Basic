@@ -1,0 +1,115 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+.container-data {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  gap: 10px;
+  width: 300px;
+  border: 2px solid white;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.input-container {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+}
+
+.span-title {
+  font-weight: 500;
+}
+
+.btns-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.btn-create {
+  background-color: green;
+
+  &:hover {
+    background-color: rgb(18, 158, 18);
+  }
+}
+
+.btn-modify {
+  background-color: orange;
+
+  &:hover {
+    background-color: rgb(247, 189, 83);
+  }
+}
+
+.btn-save {
+  background-color: rgb(216, 77, 77);
+
+  &:hover {
+    background-color:  rgb(233, 129, 129);
+  }
+}
+
+.btn-cancel {
+  background-color: grey;
+
+  &:hover {
+    background-color:  rgb(192, 191, 191);
+  }
+}
+
+.btn-reset {
+  background-color: rgb(28, 95, 90);
+
+  &:hover {
+    background-color:  rgb(42, 141, 134);
+  }
+}
+
+input {
+  padding: 5px;
+  border-radius: 5px;
+}
