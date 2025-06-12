@@ -22,7 +22,17 @@ const DataUserComponent = ({
 
   return (
     <>
-    <h2>Registro y edición de usuario por componentes</h2>
+    {
+      mode === "VISUALICE" ? (
+        <h2>Información de usuario</h2>
+      ) : (
+        mode === "MODIFY" ? (
+          <h2>Modificación de usuario</h2>
+        ) : (
+          <h2>Registro de usuario</h2>
+        )
+      )
+    }
       <div className="container-data">
         <div className="input-container">
           <InputComponent
